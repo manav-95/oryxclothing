@@ -1,0 +1,94 @@
+/* Hide scrollbar for all browsers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;     /* Firefox */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 40;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0%{
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0%{
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0%{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideInFromBottom {
+  0%{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.slide-from-left {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+
+.slide-from-right {
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+.slide-from-top {
+  animation: slideInFromTop 1.2s ease-in-out;
+}
+
+.slide-from-bottom {
+  animation: slideInFromBottom 1.2s ease-in-out;
+}
+
+
+.slide-fast-from-top {
+  animation: slideInFromTop 0.3s ease-in-out;
+}
+
+
+.slide-fast-from-bottom {
+  animation: slideInFromBottom 0.5s ease-in-out;
+}
+
+
+
+
